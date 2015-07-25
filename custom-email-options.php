@@ -3,7 +3,7 @@
 Plugin Name: Custom Email Options
 Plugin URI: http://www.wbcomdesigns.com/
 Description: Sender Email/Name Change and General Tweaks Options
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: wb-change-sender-email
 Author: Wbcom Designs<admin@wbcomdesigns.com>
 Author URI: http://www.wbcomdesigns.com/
