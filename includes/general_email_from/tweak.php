@@ -23,13 +23,15 @@ if ( ! class_exists( 'WB_general_email_from_Tweak' ) ) {
 				<td>
 				   <input name="wb_general_tweak[<?php echo $this->option; ?>]" type="email" value="<?php echo $this->value; ?>"> 
 					<br />
-					<?php echo __( 'You can define any email address, address will be used for all sent emails.<br/> Default email is ' . $from_email, WB_CHANGE_EMAIL_SLUG ); ?>
+                                        <p><?php echo __( 'You can define any email address, address will be used for all sent emails.<br/> Default email is ' . $from_email, WB_CHANGE_EMAIL_SLUG ); ?></p>
 				</td>
 			</tr>
 			<?php
 		}
 	// function to apply filter to change the email address
 		function wb_tweak() {
+			global $wb_general_tweak;
+			if($wb_general_tweak['general_email_send_from'] == '')
 			add_filter( 'wp_mail_from', array( $this, 'wp_mail_from' ) );
 		}
 	

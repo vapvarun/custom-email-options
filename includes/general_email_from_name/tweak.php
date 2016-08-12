@@ -14,13 +14,15 @@ if ( ! class_exists( 'WB_general_email_from_name_Tweak' ) ) {
 				<td>
 				   <input name="wb_general_tweak[<?php echo $this->option; ?>]" type="text" value="<?php echo $this->value; ?>"> 
 					<br />
-					<?php echo __( 'You can define any name, name will be used for all sent emails.<br/> Default name is "&#87;ordPress" This address and name will be used for all sended emails.', WB_CHANGE_EMAIL_SLUG ); ?>
+                                        <p><?php echo __( 'You can define any name, name will be used for all sent emails.<br/> Default name is "&#87;ordPress" This address and name will be used for all sended emails.', WB_CHANGE_EMAIL_SLUG ); ?></p>
 				</td>
 			</tr>
 			<?php
 		}
 	// function to apply filter to change the email from name
 		function wb_tweak() {
+			global $wb_general_tweak;
+			if($wb_general_tweak['general_email_send_from'] == '')
 			add_filter( 'wp_mail_from_name', array( $this, 'wp_mail_from_name' ) );
 		}
 	

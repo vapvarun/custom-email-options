@@ -15,7 +15,7 @@ if ( ! class_exists( 'WB_general_generation_time_Tweak' ) ) {
 				   <label ><input name="wb_general_tweak[<?php echo $this->option; ?>]" type="radio" value="yes" <?php echo ( $this->value == "yes" )? ' checked="checked"' : '' ;?>> Yes</label>
 				   <label ><input name="wb_general_tweak[<?php echo $this->option; ?>]" type="radio" value="" <?php echo ( $this->value == "" )? ' checked="checked"' : '' ;?>> No</label> 
 					<br />
-					<?php echo __( 'Only admins can see this information.<br/> Number of SQL requests, generation time and memory consumption will be shown for all pages.', WB_CHANGE_EMAIL_SLUG ); ?>
+                                        <p><?php echo __( 'Only admins can see this information.<br/> Number of SQL requests, generation time and memory consumption will be shown for all pages.', WB_CHANGE_EMAIL_SLUG ); ?></p>
 				</td>
 			</tr>
 		<?php

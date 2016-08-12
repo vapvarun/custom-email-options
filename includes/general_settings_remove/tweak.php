@@ -15,7 +15,7 @@ if ( ! class_exists( 'WB_general_settings_remove_Tweak' ) ) {
 				   <label ><input name="wb_general_tweak[<?php echo $this->option?>]" type="radio" value="yes" <?php echo ($this->value=="yes") ? ' checked="checked"' : '' ;?>> Yes</label>
 				   <label ><input name="wb_general_tweak[<?php echo $this->option?>]" type="radio" value="" <?php echo ($this->value=="") ? ' checked="checked"' : '' ;?>> No</label> 
 					<br />
-					<?php echo __( 'This will remove the settings data from database and reset the plugin on deactivation of plugin.', WB_CHANGE_EMAIL_SLUG )?>
+                                        <p><?php echo __( 'This will remove the settings data from database and reset the plugin on deactivation of plugin.', WB_CHANGE_EMAIL_SLUG )?></p>
 				</td>
 			</tr>
 			<?php

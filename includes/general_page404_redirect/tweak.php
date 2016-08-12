@@ -26,7 +26,7 @@ if ( ! class_exists( 'WB_general_page404_redirect_Tweak' ) ) {
 					  }
 					 ?>
 					</select><br />
-					<?php echo __( 'Then WordPress does not found the page, you can use any another page to show and suggest another usable information on site. By default standart theme page shows.', WB_CHANGE_EMAIL_SLUG ); ?>
+                                        <p><?php echo __( 'Then WordPress does not found the page, you can use any another page to show and suggest another usable information on site. By default standart theme page shows.', WB_CHANGE_EMAIL_SLUG ); ?></p>
 				</td>
 			</tr>
 			<?php

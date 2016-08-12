@@ -28,7 +28,7 @@ This plugin will empower you to
   control of how consistent messages are conveyed through your
   WordPress site. Effortlessly change who the email is sent from.
   
-
+If you need additional help you can contact us for [Custom Development](https://wbcomdesigns.com/plugins/custom-email-options/).
 == Installation ==
 
 1. Upload the full directory into your wp-content/plugins directory
@@ -56,4 +56,12 @@ Go to Change Sender Email Options and customize your settings.
 == Changelog ==
 
 = 1.0.0 =
-* first version.
+first version.
+= 1.0.1 =
+options updates
+= 1.0.2 =
+* Advance Options
+= 1.0.3 =
+SMTP added
+= 1.0.4 =
+SMTP fix for all mails
